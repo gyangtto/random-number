@@ -22,11 +22,11 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
 
 <body>
   <div class="container p-5">
-    <h1 class="text-center fs-1 fw-bold">숫자 맞추기!</h1>
+    <h1 class="text-center fs-1 fw-bold">돌려 돌려! 돌림판!</h1>
     <div id="result_area row mx-auto">
       <div class="result-container col-10 mx-auto position-relative">
-        <div class="dart_area border img-fluid">
-          <img id="dart-img" class="img-fluid" src="./img/dart.png" alt="다트">
+        <div class="dart_area img-fluid">
+          <img id="dart-img" class="img-fluid" src="./img/dart.png" alt="돌림판">
           <img id="dart-position" class="position-absolute start-50 translate-middle-x img-fluid mt-2 mt-md-4 mt-lg-3 mt-xxl-4 pt-4 pt-md-4 pt-lg-5" src="./img/화살표.png" alt="dart-pen">
         </div>
         <p id="answer_txt" class="fs-1 fw-bold text position-absolute top-50 start-50 translate-middle">?</p>
@@ -34,7 +34,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
     </div>
     <div id="chances_area" class="d-flex align-items-center justify-content-between">
       <p id="chance-txt">남은 기회 : 5 Coin</p>
-      <div id="chances-coins" class="d-flex gap-1">
+      <div id="chances-coins" class="d-flex gap-1 flex-wrap">
         <img class="dart-coin dart-coin-0" src="./img/dart-coin.png" alt="dart-coin">
         <img class="dart-coin dart-coin-1" src="./img/dart-coin.png" alt="dart-coin">
         <img class="dart-coin dart-coin-2" src="./img/dart-coin.png" alt="dart-coin">

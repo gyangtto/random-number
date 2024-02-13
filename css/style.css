@@ -21,27 +21,6 @@
   animation: rotate_image 1s linear infinite;
 }
 
-@media screen and (max-width: 1200px) {
-  #dart-position {
-    width: 7%;
-  }
-}
-
-
-@media screen and (max-width: 992px) {
-  #dart-position {
-    width: 5%;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  #dart-position {
-    width: 5%;
-    margin: 0 !important;
-    padding-top: 9% !important;
-  }
-}
-
 
 .dart-coin{
   width: 50px;
@@ -76,4 +55,29 @@
   line-height: 52px;
   text-align: center;
   /* border: 5px dotted dodgerblue; */
+}
+
+
+@media screen and (max-width: 1200px) {
+  #dart-position {
+    width: 7%;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  #dart-position {
+    width: 5%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #dart-position {
+    width: 5%;
+    margin: 0 !important;
+    padding-top: 9% !important;
+  }
+  .dart-coin{
+    width: 30px;
+  }
 }
