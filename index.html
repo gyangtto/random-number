@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>number-guess-game</title>
+  <!-- 부트스트랩 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+  </script>
   <link rel="stylesheet" href="./css/style.css">
   <script defer src="js/script.js"></script>
+
+  <!-- reset -->
+  <link href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+" rel="stylesheet">
 </head>
+
 <body>
-  <h1>랜덤 숫자 맞추기 게임!</h1>
-  <div id="result_area">결과</div>
-  <div id="chances_area">남은 기회 : 5번</div>
-  <input id="user_input" type="text" />
-  <button id="play_btn">go!</button>
-  <button id="reset_btn">reset!</button>
+  <div class="container p-5">
+    <h1 class="text-center fs-1 fw-bold">숫자 맞추기!</h1>
+    <div id="result_area row mx-auto">
+      <div class="result-container col-10 mx-auto position-relative">
+        <div class="dart_area border img-fluid">
+          <img id="dart-img" class="img-fluid" src="./img/dart.png" alt="다트">
+          <img id="dart-position" class="position-absolute start-50 translate-middle-x img-fluid mt-2 mt-md-4 mt-lg-3 mt-xxl-4 pt-4 pt-md-4 pt-lg-5" src="./img/화살표.png" alt="dart-pen">
+        </div>
+        <p id="answer_txt" class="fs-1 fw-bold text position-absolute top-50 start-50 translate-middle">?</p>
+      </div>
+    </div>
+    <div id="chances_area" class="d-flex align-items-center justify-content-between">
+      <p id="chance-txt">남은 기회 : 5 Coin</p>
+      <div id="chances-coins" class="d-flex gap-1">
+        <img class="dart-coin dart-coin-0" src="./img/dart-coin.png" alt="dart-coin">
+        <img class="dart-coin dart-coin-1" src="./img/dart-coin.png" alt="dart-coin">
+        <img class="dart-coin dart-coin-2" src="./img/dart-coin.png" alt="dart-coin">
+        <img class="dart-coin dart-coin-3" src="./img/dart-coin.png" alt="dart-coin">
+        <img class="dart-coin dart-coin-4" src="./img/dart-coin.png" alt="dart-coin">
+      </div>
+    </div>
+    <!-- <div id="hint">Hint</div> -->
+    <div id="start-area" class="d-flex justify-content-center gap-1 mt-5">
+      <input id="user_name" type="text" />
+      <button id="start_btn">시작하기!</button>
+    </div>
+    <div id="submit-area" class="d-flex justify-content-center gap-1 my-5">
+      <input id="user_number" type="text" />
+      <button id="submit_btn">쏘기!</button>
+    </div>
+    <button id="reset_btn" class="mx-auto">reset!</button>
 </body>
+
 </html>

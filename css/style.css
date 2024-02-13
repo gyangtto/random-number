@@ -1,0 +1,79 @@
+
+
+.container{
+  border: 5px solid red;
+}
+
+.img-container{
+  border: 5px dotted blue;
+}
+
+@keyframes rotate_image {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+#dart-img.rotate {
+  animation: rotate_image 1s linear infinite;
+}
+
+@media screen and (max-width: 1200px) {
+  #dart-position {
+    width: 7%;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  #dart-position {
+    width: 5%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #dart-position {
+    width: 5%;
+    margin: 0 !important;
+    padding-top: 9% !important;
+  }
+}
+
+
+.dart-coin{
+  width: 50px;
+}
+
+.hidden{
+  display: none !important;
+}
+
+#start-area.hidden{
+  display: none!important;
+}
+
+#submit-area{
+  display: none !important;
+}
+
+#submit-area.show{
+  display: flex !important;
+  /* margin: 0 auto !important; */
+}
+
+#reset_btn{
+  display: none;
+}
+
+
+#result_txt{
+  /* height: 72px; */
+  /* font-size: 72px; */
+  font-weight: 800;
+  line-height: 52px;
+  text-align: center;
+  /* border: 5px dotted dodgerblue; */
+}
