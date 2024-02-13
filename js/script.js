@@ -36,7 +36,6 @@ function startGame() {
   }
 
   setTimeout(() => { // 0.6초 후에 실행
-    console.log("setTimeout 작동됨");
     startArea.classList.add('hidden'); // 시작 영역 숨김
     submitArea.classList.add('show'); // 제출 영역 표시
     resetBtn.style.display = 'block'; // 리셋 버튼 표시
@@ -117,7 +116,7 @@ function playGame() {
 
     // 다트 펜 이미지 제어
     const dartcoinImgs = document.querySelectorAll('.dart-coin'); // 다트 코인 이미지들을 가져오기
-    for (let i = 0; i < dartcoinImages.length; i++) { // 모든 다트 코인 이미지에 대해 반복
+    for (let i = 0; i < dartcoinImgs.length; i++) { // 모든 다트 코인 이미지에 대해 반복
       if (i < chances) { // 현재 기회에 해당하는 다트 코인 이미지인 경우
         dartcoinImgs[i].style.display = 'block'; // 보이도록 설정
       } else { // 그렇지 않은 경우
