@@ -7,10 +7,12 @@
 
 body{
   height: 100vh;
+  color: #fefefe;
   font-family: 'DungGeunMo';
   font-size: 14px;
   font-weight: 400;
   /* overflow-y: hidden; */
+  background-color: #000;
 }
 
 #game-area{
@@ -40,6 +42,7 @@ body{
 }
 
 #answer_txt{
+  color: #000;
   text-shadow : 
   -2px -2px 0 #ccc,
   2px -2px 0 #ccc,
