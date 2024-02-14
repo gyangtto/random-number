@@ -1,7 +1,20 @@
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+body{
+  height: 100vh;
+  font-family: 'DungGeunMo';
+  font-size: 14px;
+  font-weight: 400;
+  /* overflow-y: hidden; */
+}
 
-.container{
-  /* border: 5px solid red; */
+#game-area{
+  width: 80%;
 }
 
 .img-container{
@@ -17,10 +30,22 @@
   }
 }
 
+#dart-position {
+  width: 5%;
+  margin-top: 8.8%;
+}
+
 #dart-img.rotate {
   animation: rotate_image 1s linear infinite;
 }
 
+#answer_txt{
+  text-shadow : 
+  -2px -2px 0 #ccc,
+  2px -2px 0 #ccc,
+  -2px 2px 0 #ccc,
+  2px 2px 0 #ccc;  
+}
 
 .dart-coin{
   width: 50px;
@@ -60,7 +85,15 @@
 
 @media screen and (max-width: 1200px) {
   #dart-position {
-    width: 7%;
+    width: 5%;
+  }
+  #answer_txt{
+    font-size: 24px;
+    text-shadow : 
+    -2px -2px 0 #ccc,
+    2px -2px 0 #ccc,
+    -2px 2px 0 #ccc,
+    2px 2px 0 #ccc;  
   }
 }
 
@@ -68,6 +101,18 @@
 @media screen and (max-width: 992px) {
   #dart-position {
     width: 5%;
+    margin-top: 8%;
+  }
+  #answer_txt{
+    font-size: 18px;
+    text-shadow : 
+    -2px -2px 0 #ccc,
+    2px -2px 0 #ccc,
+    -2px 2px 0 #ccc,
+    2px 2px 0 #ccc;  
+  }
+  .dart-coin{
+    width: 30px;
   }
 }
 
@@ -76,6 +121,14 @@
     width: 5%;
     margin: 0 !important;
     padding-top: 9% !important;
+  }
+  #answer_txt{
+    font-size: 18px;
+    text-shadow : 
+    -2px -2px 0 #ccc,
+    2px -2px 0 #ccc,
+    -2px 2px 0 #ccc,
+    2px 2px 0 #ccc;  
   }
   .dart-coin{
     width: 30px;
