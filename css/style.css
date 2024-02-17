@@ -25,6 +25,10 @@ main {
 }
 
 /* index */
+.howto {
+  background-color: #fff;
+  color: #222;
+}
 
 /* game_start */
 .h1_txt {
