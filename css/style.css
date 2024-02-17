@@ -23,6 +23,14 @@ main {
   place-items: center;
 }
 
+/* index */
+
+.user_name {
+  width: 80%;
+}
+
+
+/* game_start */
 .h1_txt {
   text-align: center;
   color: #fff;
