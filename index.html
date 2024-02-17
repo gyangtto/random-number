@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>돌려!돌려! 돌림판!</title>
+  <title>추억의 뽑기</title>
 
   <!-- reset -->
   <link href="
@@ -25,41 +25,19 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
 </head>
 
 <body>
-  <div class="container p-5">
-    <div id="game-area" class="mx-auto p-md-5">
-      <h1 class="text-center fs-1 fw-bold">돌려 돌려! 돌림판!</h1>
-      <div id="result_area" class="row mx-auto col-10">
-        <div class="result-container col-10 mx-auto position-relative">
-          <div class="dart_area img-fluid">
-            <img id="dart-img" class="img-fluid" src="./img/dart.png" alt="돌림판">
-            <img id="dart-position" class="position-absolute start-50 translate-middle-x img-fluid" src="./img/화살표.png"
-              alt="dart-position">
-          </div>
-          <p id="answer_txt" class="h2 fw-bold text position-absolute top-50 start-50 translate-middle">?</p>
+  <header></header>
+  <main>
+    <div class="container">
+      <h1 class="text-center mb-4">행운의 숫자 뽑기!</h1>
+      <div class="col-12 d-flex justify-content-center align-items-center gap-4 gap-md-2 flex-column flex-md-row">
+        <div class="user_name-area">
+          <label for="user_name">name : </label>
+          <input class="user_name" type="text" placeholder="2~4자 이내" />
         </div>
+      <button class="game-start-btn col-6 col-md-1"><a href="game_start.html">GAME START</a></button>
       </div>
-      <div id="chances_area" class="gap-2">
-        <p id="chance-txt">남은 기회 : 5 Coin</p>
-        <div id="chances-coins" class="d-flex gap-1">
-          <img class="dart-coin dart-coin-0" src="./img/dart-coin.png" alt="dart-coin">
-          <img class="dart-coin dart-coin-1" src="./img/dart-coin.png" alt="dart-coin">
-          <img class="dart-coin dart-coin-2" src="./img/dart-coin.png" alt="dart-coin">
-          <img class="dart-coin dart-coin-3" src="./img/dart-coin.png" alt="dart-coin">
-          <img class="dart-coin dart-coin-4" src="./img/dart-coin.png" alt="dart-coin">
-        </div>
-      </div>
-
-      <div id="start-area" class="d-flex justify-content-center gap-1 mt-5">
-        <input id="user_name" type="text" />
-        <button id="start_btn">시작하기!</button>
-      </div>
-      <div id="submit-area" class="d-flex justify-content-center gap-1 my-5">
-        <input id="user_number" type="text" />
-        <button id="submit_btn">쏘기!</button>
-      </div>
-      <button id="reset_btn" class="mx-auto">reset!</button>
     </div>
-  </div>
+  </main>
 </body>
 
 </html>

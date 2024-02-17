@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>추억의 뽑기</title>
+
+  <!-- reset -->
+  <link href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+" rel="stylesheet">
+
+  <!-- 부트스트랩 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+  </script>
+
+
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+  <main>
+    <div class="container p-5">
+      <section id="game-ing">
+        <h1 class="h1_txt">행운의 숫자는 과연?!</h1>
+        <div class="col-lg-6 col-md-8 col-12 pt-3 mx-auto">
+          <div class="chaces-area p-2 mb-4">
+            <p>남은 기회 : 5 coin * 5</p>
+            <p class="chaces-imgs">
+              <img class="coins coin-1" src="./img/coin.png" alt="코인">
+              <img class="coins coin-2" src="./img/coin.png" alt="코인">
+              <img class="coins coin-3" src="./img/coin.png" alt="코인">
+              <img class="coins coin-4" src="./img/coin.png" alt="코인">
+              <img class="coins coin-5" src="./img/coin.png" alt="코인">
+            </p>
+          </div>
+          <div class="game-img-area">
+            <img class="img-fluid col-6" src="./img/game-start.gif" alt="뽑기" />
+            <div class="input_stick-area col-6 mx-auto">
+              <div class="hint-area">
+                <h3>Hint</h3>
+                <p>UP or DOWN</p>
+              </div>
+              <div class="stick-area">
+                <img class="stick stick--default img-fluid" src="./img/game-input.png" alt="입력 시 움직일 버튼" />
+                <img class="stick stick--active img-fluid" src="./img/game_input-active.gif" alt="입력 시 버튼" />
+                <img class="stick stick--up img-fluid" src="./img/game_input-up.gif" alt="입력 시 버튼" />
+                <img class="stick stick--down img-fluid" src="./img/game_input-down.gif" alt="입력 시 버튼" />
+                <span class="positioning btn_stick"></span>
+                <span class="positioning red_btn"></span>
+                <span class="positioning yellow_btn"></span>
+                <span class="positioning blue_btn"></span>
+              </div>
+              <div class="input_area mt-5 d-flex gap-1 justify-content-center">
+                <input class="col-8" type="text" />
+                <button class="col-2">GO!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="game-over">
+
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

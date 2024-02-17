@@ -1,139 +1,137 @@
-@font-face {
-  font-family: 'DungGeunMo';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
 
-body{
+body {
+  font-family: Galmuri9, sans-serif;
   height: 100vh;
-  color: #fefefe;
-  font-family: 'DungGeunMo';
-  font-size: 14px;
-  font-weight: 400;
-  /* overflow-y: hidden; */
   background-color: #000;
+  color: #fff;
 }
 
-#game-area{
-  width: 80%;
+button {
+  background: none;
+  color: #fff;
 }
 
-.img-container{
-  border: 5px dotted blue;
+a{
+  color: #fff;
+  text-decoration: none;
 }
 
-@keyframes rotate_image {
-  from {
-      transform: rotate(0deg);
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.h1_txt {
+  text-align: center;
+  color: #fff;
+}
+
+.chaces-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chaces-area p {
+  margin: 0;
+}
+
+.chaces-imgs {
+  display: flex;
+  gap: 10px;
+}
+
+.coins {
+  width: 35px;
+}
+
+@media screen and (max-width:575px) {
+  .chaces-area {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-      transform: rotate(360deg);
-  }
 }
 
-#dart-position {
-  width: 5%;
-  margin-top: 8.8%;
+.hint-area {
+  text-align: center;
+  /* background-color: #fff; */
 }
 
-#dart-img.rotate {
-  animation: rotate_image 1s linear infinite;
+.game-img-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-#answer_txt{
-  color: #000;
-  text-shadow : 
-  -2px -2px 0 #ccc,
-  2px -2px 0 #ccc,
-  -2px 2px 0 #ccc,
-  2px 2px 0 #ccc;  
-}
-
-.dart-coin{
-  width: 50px;
-}
-
-.hidden{
-  display: none !important;
-}
-
-#start-area.hidden{
-  display: none!important;
-}
-
-#submit-area{
-  display: none !important;
-}
-
-#submit-area.show{
-  display: flex !important;
-  /* margin: 0 auto !important; */
-}
-
-#reset_btn{
+.stick {
   display: none;
 }
 
-
-#result_txt{
-  /* height: 72px; */
-  /* font-size: 72px; */
-  font-weight: 800;
-  line-height: 52px;
-  text-align: center;
-  /* border: 5px dotted dodgerblue; */
+.stick.stick--default {
+  display: block;
 }
 
-
-@media screen and (max-width: 1200px) {
-  #dart-position {
-    width: 5%;
-  }
-  #answer_txt{
-    font-size: 24px;
-    text-shadow : 
-    -2px -2px 0 #ccc,
-    2px -2px 0 #ccc,
-    -2px 2px 0 #ccc,
-    2px 2px 0 #ccc;  
-  }
+.stick-area {
+  position: relative;
+  padding: 1%;
 }
 
-
-@media screen and (max-width: 992px) {
-  #dart-position {
-    width: 5%;
-    margin-top: 8%;
-  }
-  #answer_txt{
-    font-size: 18px;
-    text-shadow : 
-    -2px -2px 0 #ccc,
-    2px -2px 0 #ccc,
-    -2px 2px 0 #ccc,
-    2px 2px 0 #ccc;  
-  }
-  .dart-coin{
-    width: 30px;
-  }
+.positioning {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 33.5%;
+  width: 16%;
+  height: 20%;
+  /* border: 1px solid #fff; */
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 575px) {
-  #dart-position {
-    width: 5%;
-    margin: 0 !important;
-    padding-top: 9% !important;
-  }
-  #answer_txt{
-    font-size: 18px;
-    text-shadow : 
-    -2px -2px 0 #ccc,
-    2px -2px 0 #ccc,
-    -2px 2px 0 #ccc,
-    2px 2px 0 #ccc;  
-  }
-  .dart-coin{
-    width: 30px;
-  }
+.btn_stick {
+  top: 3.5%;
+  left: 13.5%;
+  width: 16.5%;
+  height: 66%;
+  /* height: auto; */
+}
+
+.btn_stick:hover {
+  background-image: url(./../img/stick-hover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position-y: 1px; */
+}
+
+.red_btn {
+  left: 33.5%;
+}
+
+.red_btn:hover {
+  background-image: url(./../img/red-btn-hover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.yellow_btn {
+  left: 54%;
+}
+
+.yellow_btn:hover {
+  background-image: url(./../img/yellow-btn-hover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blue_btn {
+  left: 74%;
+}
+
+.blue_btn:hover {
+  background-image: url(./../img/blue-btn-hover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
