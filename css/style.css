@@ -5,6 +5,7 @@ body {
   height: 100vh;
   background-color: #000;
   color: #fff;
+  word-break: keep-all;
 }
 
 button {
@@ -24,11 +25,6 @@ main {
 }
 
 /* index */
-
-.user_name {
-  width: 80%;
-}
-
 
 /* game_start */
 .h1_txt {
@@ -100,7 +96,7 @@ main {
 }
 
 .btn_stick {
-  top: 3.5%;
+  top: 3%;
   left: 13.5%;
   width: 16.5%;
   height: 66%;
